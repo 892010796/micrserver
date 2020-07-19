@@ -1,0 +1,15 @@
+
+Spring:
+  application:
+    name: provider01
+
+server:
+  port: 8002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  #使用IP注册
+  instance:
+    prefer-ip-address: true
